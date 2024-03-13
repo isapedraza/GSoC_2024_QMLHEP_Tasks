@@ -35,23 +35,28 @@ Task II: Classical Graph Neural Network (GNN)
 For Task II, you will use ParticleNet’s data for Quark/Gluon jet classification available here(https://zenodo.org/record/3164691#.YigdGt9MHrB) with its corresponding description. 
 ● Choose 2 Graph-based architectures of your choice to classify jets as being quarks or gluons. Provide a description on what considerations you have taken to project this point-cloud dataset to a set of interconnected nodes and edges. 
 ● Discuss the resulting performance of the 2 chosen architectures. 
+
 Task III: Open Task 
 Please comment on quantum computing or quantum machine learning. You can also comment on one quantum algorithm or one quantum software you are familiar with. You can also suggest methods you think are good and you would like to work on. Please use your own understanding. Comments copied from the internet will not be considered.
+
 Task IV: Quantum Generative Adversarial Network (QGAN)
 You will explore how best to apply a quantum generative adversarial network (QGAN) to solve a High Energy Data analysis issue, more specifically, separating the signal events from the background events. You should use the Google Cirq and Tensorflow Quantum (TFQ) libraries for this task. 
 A set of input samples (simulated with Delphes) is provided in NumPy NPZ format [Download Input (https://drive.google.com/file/d/1r_MZB_crfpij6r3SxPDeU_3JD6t6AxAj/view)]. In the input file, there are only 100 samples for training and 100 samples for testing so it won’t take much computing resources to accomplish this 
 task. The signal events are labeled with 1 while the background events are labeled with 0. 
 Be sure to show that you understand how to fine tune your machine learning model to improve the performance. The performance can be evaluated with classification accuracy or Area Under ROC Curve (AUC). 
+
 Task V: Quantum Graph Neural Network (QGNN) 
 In task II you already worked with a classical GNN. 
 Describe a possibility for a QGNN circuit, which takes advantage of the graph representation of the data
 Implement and draw the circuit.
+
 Task VI: Quantum representation learning
 In this task you should implement a simple representation learning scheme based on a contrastive loss:
 Load the MNIST dataset
 Write a function which takes an image and prepares a quantum state. This function should have trainable parameters which we want to learn in order to have good quantum representations
 Create a circuit with which takes two images and embeds both as quantum states with the function you wrote before. Afterwards the circuit should perform a SWAP test between the two states. In the end the measurement should give the fidelity of the quantum states.
 Train the circuit parameters with a contrastive loss: For two MNIST images in the same class the fidelity should be maximized, while for images of different classes the fidelity should be minimized.
+
 Task VII: Equivariant quantum neural networks
 In this task you are supposed to get started with equivariant quantum neural networks by implementing a Z_2 × Z_2 equivariant quantum neural network. Z_2 is a symmetry group an as an example we will generate a simple classical dataset which is respects the Z_2 x Z_2 symmetry.
 This example is explained in the paper https://arxiv.org/abs/2205.06217 and additional background can be found in https://arxiv.org/abs/2210.08566. 
